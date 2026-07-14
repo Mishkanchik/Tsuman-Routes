@@ -50,6 +50,14 @@ const toTsuman = [
     ]
   },
   {
+    from: 'Ківерці',
+    to: 'Цумань',
+    times: [
+      { departure: '11:00', arrival: '11:50' },
+      { departure: '12:20', arrival: '13:25' },
+    ]
+  },
+  {
     from: 'Рівне',
     to: 'Липне',
     times: [
