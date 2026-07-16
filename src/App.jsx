@@ -132,7 +132,7 @@ function App() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-3 gap-3">
                   {route.times.map((time, timeIndex) => (
                     <motion.div
                       key={timeIndex}
@@ -195,7 +195,7 @@ function App() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-3 gap-3">
                   {route.times.map((time, timeIndex) => (
                     <motion.div
                       key={timeIndex}
