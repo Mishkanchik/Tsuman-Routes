@@ -109,13 +109,13 @@ function App() {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="flex flex-wrap gap-6 justify-start"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
             {fromTsuman.map((route, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="route-card w-full md:w-auto md:min-w-[400px] h-fit"
+                className="route-card w-full h-fit"
               >
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-3 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl">
@@ -172,13 +172,13 @@ function App() {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="flex flex-wrap gap-6 justify-start"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
             {fromLutsk.map((route, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="route-card w-full md:w-auto md:min-w-[400px] h-fit"
+                className="route-card w-full h-fit"
               >
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-3 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl">
