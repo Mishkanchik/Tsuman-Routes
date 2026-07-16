@@ -132,18 +132,16 @@ function App() {
                   </div>
                 </div>
 
-                <div className="space-y-3">
+                <div className="grid grid-cols-2 gap-3">
                   {route.times.map((time, timeIndex) => (
                     <motion.div
                       key={timeIndex}
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: timeIndex * 0.05 }}
-                      className="flex items-center justify-between p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-colors"
+                      className="time-badge"
                     >
-                      <div className="time-badge">
-                        {time}
-                      </div>
+                      {time}
                     </motion.div>
                   ))}
                 </div>
@@ -197,18 +195,16 @@ function App() {
                   </div>
                 </div>
 
-                <div className="space-y-3">
+                <div className="grid grid-cols-2 gap-3">
                   {route.times.map((time, timeIndex) => (
                     <motion.div
                       key={timeIndex}
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: timeIndex * 0.05 }}
-                      className="flex items-center justify-between p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-colors"
+                      className="time-badge"
                     >
-                      <div className="time-badge">
-                        {time}
-                      </div>
+                      {time}
                     </motion.div>
                   ))}
                 </div>

@@ -18,6 +18,6 @@
   }
   
   .time-badge {
-    @apply inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold shadow-lg;
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold shadow-lg text-lg;
   }
 }
