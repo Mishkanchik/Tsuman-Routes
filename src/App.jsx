@@ -5,65 +5,36 @@ const fromTsuman = [
   {
     from: 'Цумань',
     to: 'Луцьк',
-    times: [
-      { departure: '7:00', arrival: '8:10' },
-      { departure: '7:50', arrival: '8:55' },
-      { departure: '10:00', arrival: '11:25' },
-      { departure: '10:55', arrival: '12:55' },
-      { departure: '14:30', arrival: '15:55' },
-      { departure: '17:00', arrival: '18:15' },
-      { departure: '18:30', arrival: '19:50' },
-    ]
+    times: ['7:00', '7:50', '10:00', '10:55', '14:30', '17:00', '18:30']
   },
   {
     from: 'Цумань',
     to: 'Ківерці',
-    times: [
-      { departure: '8:00', arrival: '11:00' },
-      { departure: '10:00', arrival: '12:00' },
-    ]
+    times: ['8:00', '10:00']
   },
   {
     from: 'Липне',
     to: 'Рівне',
     note: 'Цумань - прохідна точка',
-    times: [
-      { departure: '6:40', arrival: '8:20' },
-      { departure: '15:40', arrival: '17:00' },
-    ]
+    times: ['6:40', '15:40']
   }
 ]
 
-const toTsuman = [
+const fromLutsk = [
   {
     from: 'Луцьк',
     to: 'Цумань',
-    times: [
-      { departure: '07:40', arrival: '08:50' },
-      { departure: '08:35', arrival: '09:45' },
-      { departure: '10:50', arrival: '12:00' },
-      { departure: '12:55', arrival: '14:05' },
-      { departure: '13:45', arrival: '15:00' },
-      { departure: '15:55', arrival: '17:00' },
-      { departure: '18:15', arrival: '19:55' },
-      { departure: '19:50', arrival: '20:50' },
-    ]
+    times: ['07:40', '08:35', '10:50', '12:55', '13:45', '15:55', '18:15', '19:50']
   },
   {
     from: 'Ківерці',
     to: 'Цумань',
-    times: [
-      { departure: '11:00', arrival: '11:50' },
-      { departure: '12:20', arrival: '13:25' },
-    ]
+    times: ['11:00', '12:20']
   },
   {
     from: 'Рівне',
     to: 'Липне',
-    times: [
-      { departure: '13:10', arrival: '15:10' },
-      { departure: '18:15', arrival: '19:20' },
-    ]
+    times: ['13:10', '18:15']
   }
 ]
 
@@ -170,14 +141,8 @@ function App() {
                       transition={{ delay: timeIndex * 0.05 }}
                       className="flex items-center justify-between p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-colors"
                     >
-                      <div className="flex items-center gap-3">
-                        <div className="time-badge">
-                          {time.departure}
-                        </div>
-                        <ArrowRight className="w-5 h-5 text-purple-400" />
-                        <div className="time-badge bg-gradient-to-r from-green-500 to-teal-600">
-                          {time.arrival}
-                        </div>
+                      <div className="time-badge">
+                        {time}
                       </div>
                     </motion.div>
                   ))}
@@ -203,7 +168,7 @@ function App() {
             <div className="p-3 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl">
               <ArrowDownRight className="w-6 h-6 text-white" />
             </div>
-            <h2 className="text-3xl font-bold text-white">До Цумані</h2>
+            <h2 className="text-3xl font-bold text-white">З Луцька</h2>
           </motion.div>
           <motion.div
             variants={containerVariants}
@@ -211,7 +176,7 @@ function App() {
             animate="visible"
             className="flex flex-wrap gap-6 justify-start"
           >
-            {toTsuman.map((route, index) => (
+            {fromLutsk.map((route, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
@@ -241,14 +206,8 @@ function App() {
                       transition={{ delay: timeIndex * 0.05 }}
                       className="flex items-center justify-between p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-colors"
                     >
-                      <div className="flex items-center gap-3">
-                        <div className="time-badge">
-                          {time.departure}
-                        </div>
-                        <ArrowRight className="w-5 h-5 text-purple-400" />
-                        <div className="time-badge bg-gradient-to-r from-green-500 to-teal-600">
-                          {time.arrival}
-                        </div>
+                      <div className="time-badge">
+                        {time}
                       </div>
                     </motion.div>
                   ))}
