@@ -13,6 +13,18 @@ const fromTsuman = [
     times: ['8:00', '10:00']
   },
   {
+    from: 'Цумань',
+    to: 'Пролісок',
+    note: 'через Грем\'яче',
+    times: ['12:25', '15:25']
+  },
+  {
+    from: 'Цумань',
+    to: 'Башлики',
+    note: 'через Карпилівку',
+    times: ['09:15', '14:45', '16:45']
+  },
+  {
     from: 'Липне',
     to: 'Рівне',
     note: 'Цумань - прохідна точка',
@@ -30,6 +42,18 @@ const fromLutsk = [
     from: 'Ківерці',
     to: 'Цумань',
     times: ['11:00', '12:20']
+  },
+  {
+    from: 'Пролісок',
+    to: 'Цумань',
+    note: 'через Грем\'яче',
+    times: ['17:55']
+  },
+  {
+    from: 'Башлики',
+    to: 'Цумань',
+    note: 'через Карпилівку',
+    times: ['09:25', '14:25']
   },
   {
     from: 'Рівне',
@@ -129,6 +153,9 @@ function App() {
                       <ArrowRight className="w-4 h-4" />
                       <span className="text-lg">{route.to}</span>
                     </div>
+                    {route.note && (
+                      <p className="text-sm text-purple-400 mt-1 italic">{route.note}</p>
+                    )}
                   </div>
                 </div>
 
@@ -192,6 +219,9 @@ function App() {
                       <ArrowRight className="w-4 h-4" />
                       <span className="text-lg">{route.to}</span>
                     </div>
+                    {route.note && (
+                      <p className="text-sm text-purple-400 mt-1 italic">{route.note}</p>
+                    )}
                   </div>
                 </div>
 
