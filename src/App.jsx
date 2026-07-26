@@ -137,7 +137,7 @@ function App() {
             <div className="p-3 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl">
               <ArrowUpRight className="w-6 h-6 text-white" />
             </div>
-            <h2 className="text-3xl font-bold text-white">З Цумані</h2>
+            <h2 className="text-3xl font-bold text-white">З Цуманя</h2>
           </motion.div>
           <motion.div
             variants={containerVariants}
@@ -203,7 +203,7 @@ function App() {
             <div className="p-3 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl">
               <ArrowDownRight className="w-6 h-6 text-white" />
             </div>
-            <h2 className="text-3xl font-bold text-white">З Луцька</h2>
+            <h2 className="text-3xl font-bold text-white">На Цумань</h2>
           </motion.div>
           <motion.div
             variants={containerVariants}
