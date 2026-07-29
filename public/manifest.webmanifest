@@ -1,6 +1,6 @@
 {
   "name": "Tsuman Routes",
-  "short_name": "Tsuman",
+  "short_name": "RoutesTsuman",
   "description": "Розклад руху міжміських та приміських автобусів Цумань",
   "start_url": "/",
   "display": "standalone",
