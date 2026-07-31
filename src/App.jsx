@@ -263,7 +263,7 @@ function App() {
           id="tab-from-tsuman"
         >
           <ArrowUpRight className="w-4 h-4" />
-          З Цумані
+          З Цуманя
         </button>
         <button
           className={`tab-btn ${activeTab === 'to' ? 'tab-active' : ''}`}
@@ -271,7 +271,7 @@ function App() {
           id="tab-to-tsuman"
         >
           <ArrowDownRight className="w-4 h-4" />
-          До Цумані
+          До Цуманя
         </button>
       </div>
 
