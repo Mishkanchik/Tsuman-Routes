@@ -183,13 +183,12 @@
     color: #34d399;
   }
 
-  /* Past time - inactive buses (improved readability and contrast) */
+  /* Past time - inactive buses (clear and readable style) */
   .time-past {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.1);
-    color: rgba(226, 232, 240, 0.45);
-    text-decoration: line-through;
-    text-decoration-color: rgba(226, 232, 240, 0.3);
+    background: rgba(15, 23, 42, 0.6);
+    border-color: rgba(148, 163, 184, 0.25);
+    color: #94a3b8;
+    opacity: 0.85;
   }
 
   /* Next upcoming bus - highlighted green */
